@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- заголовок -->
+
+            <TextView
+                android:id="@+id/textView_name_part1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/name_part_1_calculator"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <!-- ввід HP -->
+            <EditText
+                android:id="@+id/editText_HP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введіть HP, %"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- ввід CP -->
+            <EditText
+                android:id="@+id/editText_CP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введіть CP, %"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- ввід SP -->
+            <EditText
+                android:id="@+id/editText_SP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введіть SP, %"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- ввід NP -->
+            <EditText
+                android:id="@+id/editText_NP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введіть NP, %"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- ввід OP -->
+            <EditText
+                android:id="@+id/editText_OP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введіть OP, %"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- ввід WP -->
+            <EditText
+                android:id="@+id/editText_WP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введіть WP, %"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- ввід AP -->
+            <EditText
+                android:id="@+id/editText_AP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введіть AP, %"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- кнопка для розрахунку -->
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Розрахувати"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:background="@color/purple_light" />
+
+            <!-- виведення результату -->
+            <TextView
+                android:id="@+id/outputResults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Результат: "
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

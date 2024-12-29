@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LW_1</string>
+
+    <string name="start_button1">Part 1</string>
+    <string name="start_button2">Part 2</string>
+
+    <string name="name_part_1_calculator">Калькулятор для розрахунку складу сухої та горючої маси палива та
+нижчої теплоти згоряння для робочої, сухої та горючої маси.</string>
+    <string name="name_part_2_calculator">Калькулятор для перерахунку елементарного складу та нижчої
+    теплоти згоряння мазуту на робочу масу для складу горючої маси мазуту.</string>
+
+
+
+    <string name="result">Розрахувати</string>
+
+</resources>
