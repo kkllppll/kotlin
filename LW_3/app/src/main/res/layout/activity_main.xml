@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- потужність електростанції -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Середня потужність (Pс), МВт:"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputAveragePower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Введіть середню потужність"
+            android:padding="8dp"
+            android:background="@android:drawable/edit_text"
+            android:textSize="16sp" />
+
+        <!-- стандартне відхилення потужності -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Стандартне відхилення (σP), МВт:"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputStdDeviation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Введіть стандартне відхилення"
+            android:padding="8dp"
+            android:background="@android:drawable/edit_text"
+            android:textSize="16sp" />
+
+        <!-- зменшена похибка -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зменшена похибка (σP), МВт:"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputLwrDeviation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Введіть зменшену похибку"
+            android:padding="8dp"
+            android:background="@android:drawable/edit_text"
+            android:textSize="16sp" />
+
+
+        <!-- вартість енергії -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тариф на енергію (В), грн/кВт·год:"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputEnergyCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Введіть вартість енергії"
+            android:padding="8dp"
+            android:background="@android:drawable/edit_text"
+            android:textSize="16sp" />
+
+        <!-- кнопка "Розрахувати" -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/outputResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат з'явиться тут"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:background="#EEEEEE"
+            android:gravity="start"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
