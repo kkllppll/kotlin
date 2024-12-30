@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- кнопка "видалити групу" -->
+    <Button
+        android:id="@+id/btnRemoveGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✖"
+        android:layout_marginTop="16dp" />
+
+    <!-- найменування ЕП -->
+    <EditText
+        android:id="@+id/et_ep_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Найменування ЕП"
+        android:textSize="15sp" />
+
+    <!-- номінальний коефіцієнт корисної дії ηн -->
+    <EditText
+        android:id="@+id/et_eta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Номінальне значення ккд (ηн)"
+        android:textSize="15sp" />
+
+    <!-- коефіцієнт потужності cos φ -->
+    <EditText
+        android:id="@+id/et_cos_phi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Введіть значення cos φ"
+        android:textSize="15sp" />
+
+    <!-- напруга навантаження Uн -->
+    <EditText
+        android:id="@+id/et_voltage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Введіть напругу Uн"
+        android:textSize="15sp" />
+
+    <!-- кількість ЕП -->
+    <EditText
+        android:id="@+id/et_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Введіть кількість ЕП"
+        android:textSize="15sp" />
+
+    <!-- номінальна потужність ЕП -->
+    <EditText
+        android:id="@+id/et_power"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Введіть потужність Pн"
+        android:textSize="15sp" />
+
+    <!-- коефіцієнт використання Кв -->
+    <EditText
+        android:id="@+id/et_usage_coeff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Введіть значення Кв"
+        android:textSize="15sp" />
+
+    <!-- коефіцієнт реактивної потужності tg φ -->
+    <EditText
+        android:id="@+id/et_tg_phi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Введіть значення tg φ"
+        android:textSize="15sp" />
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- найменування ЕП -->
+        <EditText
+            android:id="@+id/et_ep_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Найменування ЕП"
+            android:textSize="15sp" />
+
+
+        <!-- кількість ЕП -->
+        <EditText
+            android:id="@+id/et_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Введіть кількість ЕП"
+            android:textSize="15sp" />
+
+        <!-- n*Ph -->
+        <EditText
+            android:id="@+id/et_Phi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Введіть значення N * Pн"
+            android:textSize="15sp" />
+
+        <!--  nPhKv -->
+        <EditText
+            android:id="@+id/et_nPhKv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Введіть значення nPhKv"
+            android:textSize="15sp" />
+
+        <!-- nPnKvtg -->
+        <EditText
+            android:id="@+id/et_nPnKvtg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Введіть значення tnPnKvtg"
+            android:textSize="15sp" />
+
+        <!-- np2 -->
+        <EditText
+            android:id="@+id/et_np2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Введіть значення np2"
+            android:textSize="15sp" />
+
+        <!-- кнопка розрахувати -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <!-- вивід результатів -->
+        <TextView
+            android:id="@+id/outputResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат з'явиться тут"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
