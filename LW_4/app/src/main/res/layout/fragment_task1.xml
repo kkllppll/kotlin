@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Розрахунок вибору кабелю"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <!-- Вхідні дані -->
+        <EditText
+            android:id="@+id/inputSm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Розрахункове навантаження (кВА)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/inputUnom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Номінальна напруга кВ"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/inputJek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Економічна густина струму"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/inputIk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Струм КЗ (A)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/inputTf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Час відключення струму (с)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/inputCt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Коефіцієнт термічної стійкості"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Вивід результатів -->
+        <TextView
+            android:id="@+id/outputResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат з'явиться тут"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
