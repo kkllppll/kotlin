@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- заголовок -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Калькулятор порівняння надійності систем"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <!-- поле для коефіцієнта простою -->
+    <EditText
+        android:id="@+id/coef_simple_downtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Макс. коефіцієнт планового простою (год.)"
+        android:inputType="numberDecimal" />
+
+    <!-- контейнер для динамічних елементів -->
+    <LinearLayout
+        android:id="@+id/elements_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp" />
+
+    <!-- кнопка для додавання елементів -->
+    <Button
+        android:id="@+id/add_element_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Додати елемент" />
+
+    <!-- кнопка для розрахунку -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Розрахувати"
+        android:layout_marginTop="16dp" />
+
+    <!-- поле для виведення результатів -->
+    <TextView
+        android:id="@+id/results_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/input_omega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ω (рік^-1)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/input_t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="tв (год.)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/input_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pm (кВт)"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/input_T"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tm"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/input_k"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="kp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/input_price_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Зперп (грн/кВт)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/input_price_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Зперп (грн/кВт)"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
